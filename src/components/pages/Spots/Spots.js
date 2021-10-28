@@ -13,7 +13,8 @@ const Spots = () => {
   }, [])
   return (
     <div>
-      <h2 className="my-4 text-warning fw-bolder "> Top Tourist Spot</h2>
+      <h2 className="my-4 text-warning fw-bolder "> Book Your Trip</h2>
+      <h1>Top Destination</h1>
       {/* <hr className="service-hr" /> */}
       <div className="container-fluid">
         <div className="row g-4">

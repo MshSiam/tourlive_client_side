@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import Spot from "./Spot/Spot"
 
-const Spots = () => {
+const SpotPage = () => {
   // --fetchinf Data-- //
   const [spots, setSpots] = useState([])
   useEffect(() => {
@@ -17,7 +17,7 @@ const Spots = () => {
       {/* <hr className="service-hr" /> */}
       <div className="container-fluid">
         <div className="row g-4">
-          {spots.slice(0, 6).map((spot) => (
+          {spots.map((spot) => (
             <Spot spot={spot} key={spot.id}></Spot>
           ))}
         </div>
@@ -26,4 +26,4 @@ const Spots = () => {
   )
 }
 
-export default Spots
+export default SpotPage

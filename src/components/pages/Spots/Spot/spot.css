@@ -1,0 +1,36 @@
+.service-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.service-img:hover {
+  transform: scale(1.1);
+}
+
+.bgcolor {
+  padding: 15px;
+  margin: 20px;
+  height: 100%;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.bgcolor:hover {
+  /* background-color: rgb(212, 254, 255); */
+  box-shadow: 2px 2px 10px 1px rgb(206, 206, 206);
+}
+
+.btn-danger {
+  padding: 5px 6px;
+  transition: 0.4s;
+  border: 1px solid white;
+}
+
+.btn-danger:hover {
+  border: 1px solid red;
+  color: red;
+  background-color: #fff;
+}

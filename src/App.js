@@ -10,6 +10,7 @@ import Login from "./components/pages/Login and Signup/Login"
 import SignUp from "./components/pages/Login and Signup/SignUp"
 import Notfound from "./components/pages/Notfound/NotFound"
 import Footer from "./components/pages/Footer/Footer"
+import SpotPage from "./components/pages/Spots/SpotPage"
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
             <Aboutus></Aboutus>
           </Route>
           <Route path="/spots">
-            <Spots></Spots>
+            <SpotPage></SpotPage>
           </Route>
           <Route path="/contact">
             <ContactUs></ContactUs>

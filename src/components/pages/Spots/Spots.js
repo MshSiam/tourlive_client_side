@@ -2,6 +2,7 @@ import React from "react"
 import { useEffect } from "react"
 import { useState } from "react"
 import Spot from "./Spot/Spot"
+import css from "./SpotPage"
 
 const Spots = () => {
   // --fetchinf Data-- //
@@ -13,8 +14,8 @@ const Spots = () => {
   }, [])
   return (
     <div>
-      <h2 className="my-4 text-warning fw-bolder "> Book Your Trip</h2>
-      <h1>Top Destination</h1>
+      <h2 className="my-4 text-warning fw-bolder"> Top Destination Of</h2>
+      <h1>Weekend</h1>
       {/* <hr className="service-hr" /> */}
       <div className="container">
         <div className="row g-4">

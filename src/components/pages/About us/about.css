@@ -19,3 +19,11 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.about-img {
+  width: 450px;
+  height: auto;
+}
+.accordion {
+  margin-bottom: 150px;
+}

@@ -1,0 +1,21 @@
+.cu-img {
+  margin-top: -100px;
+  background: url("../../../images/luke-porter-NEqEC7qa9FM-unsplash.jpg")
+    no-repeat center / cover;
+  height: 300px;
+  width: auto;
+}
+.cu-img h1 {
+  background-color: rgba(6, 21, 24, 0.589);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.cu-img .overlay {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}

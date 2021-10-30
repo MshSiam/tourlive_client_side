@@ -17,7 +17,9 @@ const Spot = (props) => {
         <Link to={`/spot/${id}`}>
           <button className="btn-danger rounded-3">Learn More</button>
         </Link>
-        <button className="btn1">Book Now</button>
+        <Link to={`/booking/${id}`}>
+          <button className="btn1">Book Now</button>
+        </Link>
       </div>
     </div>
   )

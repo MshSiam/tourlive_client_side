@@ -1,0 +1,21 @@
+.sp-img {
+  margin-top: -100px;
+  background: url("../../../images/pexels-alexandr-podvalny-1004584.jpg")
+    no-repeat center / cover;
+  height: 500px;
+  width: auto;
+}
+.sp-img h1 {
+  background-color: rgba(82, 137, 148, 0.678);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.sp-img .overlay {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -4,6 +4,9 @@ ul {
   margin-left: 20px;
   margin-top: 10px;
 }
+.main-footer {
+  background-color: rgb(83, 19, 92);
+}
 
 .wrapper .button {
   display: inline-block;

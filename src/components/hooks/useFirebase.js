@@ -6,7 +6,7 @@ import {
   onAuthStateChanged
 } from "firebase/auth"
 import { useEffect, useState } from "react"
-import initializeAuthentication from "../firebase/firebase.init"
+import initializeAuthentication from "../Firebase/firebase.init"
 
 initializeAuthentication()
 
@@ -19,11 +19,9 @@ const useFirebase = () => {
   // // //  Google SignIn // // //
   const singInUsingGoogle = () => {
     setisLoading(true)
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUsers(result.user)
-      })
-      .finally(() => setisLoading(false))
+    return signInWithPopup(auth, googleProvider).finally(() =>
+      setisLoading(false)
+    )
   }
 
   // // //  user's State change observer's function // //

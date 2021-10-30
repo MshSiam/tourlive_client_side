@@ -16,7 +16,7 @@ const Spots = () => {
       <h2 className="my-4 text-warning fw-bolder "> Book Your Trip</h2>
       <h1>Top Destination</h1>
       {/* <hr className="service-hr" /> */}
-      <div className="container-fluid">
+      <div className="container">
         <div className="row g-4">
           {spots.slice(0, 6).map((spot) => (
             <Spot spot={spot} key={spot.id}></Spot>

@@ -1,0 +1,21 @@
+.ab-img {
+  margin-top: -100px;
+  background: url("../../../images/westwind-air-service-fYSl60PXAnM-unsplash.jpg")
+    no-repeat center / cover;
+  height: 300px;
+  width: auto;
+}
+.ab-img h1 {
+  background-color: rgba(6, 21, 24, 0.589);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.ab-img .overlay {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}

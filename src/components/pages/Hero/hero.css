@@ -1,4 +1,5 @@
 .bg-img {
+  margin-top: -100px;
   background: url("../../../images/il-vagabiondo-8eNt0CQamB0-unsplash.jpg")
     no-repeat center / cover;
   height: 600px;

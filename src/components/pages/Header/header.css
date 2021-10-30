@@ -4,6 +4,9 @@
   justify-content: space-between;
   /* padding: 20px; */
 }
+.nvbg {
+  background-color: rgba(78, 216, 240, 0.226);
+}
 
 .header img {
   width: 170px;
@@ -19,9 +22,9 @@
 }
 
 .btn-danger2 {
-  background-color: rgb(17, 104, 0);
+  background-color: rgb(0, 92, 104);
   color: aliceblue;
-  border: 1px solid green;
+  border: 1px solid rgb(16, 141, 172);
   transition: 0.4s;
   margin-top: 9px;
 }
@@ -32,14 +35,14 @@
 
 .btn-danger2:hover {
   background-color: #fff;
-  color: rgb(17, 104, 0);
-  border: 1px solid green;
+  color: rgb(0, 101, 104);
+  border: 1px solid rgb(33, 145, 145);
 }
 
 .menuBtn {
   border: none;
-  color: #fff;
-  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   font-size: 13px;
   margin-right: -20px;
 }
@@ -78,6 +81,16 @@
   }
 }
 
+.another-menu {
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 668px) {
+  .another-menu {
+    display: block;
+  }
+}
+
 @media screen and (min-width: 669px) and (max-width: 968px) {
   .loginbtn {
     margin-right: 20px;
@@ -88,5 +101,8 @@
   }
   .loginSingup {
     margin: 0 auto;
+  }
+  .another-menu {
+    display: block;
   }
 }

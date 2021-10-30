@@ -2,6 +2,7 @@ import React from "react"
 import { useEffect } from "react"
 import { useState } from "react"
 import Spot from "./Spot/Spot"
+import css from "./spotPage.css"
 
 const SpotPage = () => {
   // --fetchinf Data-- //
@@ -13,10 +14,15 @@ const SpotPage = () => {
   }, [])
   return (
     <div>
+      <div className="sp-img px-4">
+        <div className="overlay">
+          <h1 className="text-success">Book Your Favourite Destination </h1>
+        </div>
+      </div>
       <h2 className="my-4 text-warning fw-bolder "> Book Your Trip</h2>
       <h1>Top Destination</h1>
-      {/* <hr className="service-hr" /> */}
-      <div className="container-fluid">
+
+      <div className="container">
         <div className="row g-4">
           {spots.map((spot) => (
             <Spot spot={spot} key={spot.id}></Spot>

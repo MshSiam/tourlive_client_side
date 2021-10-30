@@ -4,7 +4,7 @@ import css from "./footer.css"
 const Footer = () => {
   return (
     <div>
-      <div className="main-footer bg-dark mt-5 py-5">
+      <div className="main-footer  mt-5 py-5">
         <div className="container   ">
           <div className="row">
             <div className="col ">

@@ -77,7 +77,7 @@ const Booking = () => {
               placeholder="your name"
               type="text"
               defaultValue={user?.name}
-              {...register("user name", { required: true })}
+              {...register("userName", { required: true })}
             />
 
             <input

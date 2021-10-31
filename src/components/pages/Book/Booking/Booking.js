@@ -22,17 +22,19 @@ const Booking = () => {
     console.log(data)
 
     // post via axios //
-    axios.post(`http://localhost:5000/booking`, data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Booked Successfully !!")
-        reset()
-      }
-    })
+    axios
+      .post(`https://eerie-tomb-25454.herokuapp.com/booking`, data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Booked Successfully !!")
+          reset()
+        }
+      })
   }
   const { bookingId } = useParams()
   const [spot, setSpot] = useState({})
   useEffect(() => {
-    fetch(`http://localhost:5000/spots/${bookingId}`)
+    fetch(`https://eerie-tomb-25454.herokuapp.com/spots/${bookingId}`)
       .then((res) => res.json())
       .then((data) => setSpot(data))
   }, [])

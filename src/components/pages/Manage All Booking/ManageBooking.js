@@ -4,7 +4,7 @@ import AllBookings from "./Bookings/AllBookings"
 const ManageBooking = () => {
   const [bookings, setBookings] = useState([])
   useEffect(() => {
-    fetch("http://localhost:5000/booking")
+    fetch("https://eerie-tomb-25454.herokuapp.com/booking")
       .then((res) => res.json())
       .then((data) => setBookings(data))
   }, [])

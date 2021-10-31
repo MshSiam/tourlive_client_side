@@ -10,12 +10,14 @@ const AddSpot = () => {
     console.log(data)
 
     // axios post //
-    axios.post("http://localhost:5000/spots", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Spot Added !!")
-        reset()
-      }
-    })
+    axios
+      .post("https://eerie-tomb-25454.herokuapp.com/spots", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Spot Added !!")
+          reset()
+        }
+      })
   }
   return (
     <div className="container spot-container">

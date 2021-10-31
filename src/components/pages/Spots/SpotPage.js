@@ -8,7 +8,7 @@ const SpotPage = () => {
   // --fetchinf Data-- //
   const [spots, setSpots] = useState([])
   useEffect(() => {
-    fetch("http://localhost:5000/spots")
+    fetch("https://eerie-tomb-25454.herokuapp.com/spots")
       .then((res) => res.json())
       .then((data) => setSpots(data))
   }, [])

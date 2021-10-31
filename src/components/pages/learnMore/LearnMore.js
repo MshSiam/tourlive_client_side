@@ -5,7 +5,7 @@ const LearnMore = () => {
   const { learnId } = useParams()
   const [datas, setDatas] = useState([])
   useEffect(() => {
-    fetch("service.json")
+    fetch("https://eerie-tomb-25454.herokuapp.com")
       .then((res) => res.json())
       .then((data) => setDatas(data))
   }, [])

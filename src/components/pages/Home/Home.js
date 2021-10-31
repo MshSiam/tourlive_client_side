@@ -1,4 +1,5 @@
 import React from "react"
+import Aboutus from "../About us/Aboutus"
 import Hero from "../Hero/Hero"
 import Spots from "../Spots/Spots"
 
@@ -7,6 +8,10 @@ const Home = () => {
     <div>
       <Hero></Hero>
       <Spots></Spots>
+      <br />
+      <br />
+      <br />
+      <Aboutus></Aboutus>
     </div>
   )
 }

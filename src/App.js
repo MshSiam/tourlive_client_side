@@ -17,6 +17,7 @@ import MyBookings from "./components/pages/My bookings/MyBookings"
 import PrivateRoute from "./components/pages/Login and Signup/Private Route/PrivateRoute"
 import LearnMore from "./components/pages/learnMore/LearnMore"
 import Booking from "./components/pages/Book/Booking/Booking"
+import MyOrders from "./components/pages/My orders/MyOrders"
 
 function App() {
   return (
@@ -52,6 +53,9 @@ function App() {
             <PrivateRoute path="/booking/:bookingId">
               <Booking></Booking>
             </PrivateRoute>
+            {/* <MyOrders path="/user/:userId">
+              <Booking></Booking>
+            </MyOrders> */}
 
             <Route path="/login">
               <Login></Login>

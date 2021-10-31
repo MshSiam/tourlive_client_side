@@ -8,7 +8,7 @@ const SpotPage = () => {
   // --fetchinf Data-- //
   const [spots, setSpots] = useState([])
   useEffect(() => {
-    fetch("tour.json")
+    fetch("http://localhost:5000/spots")
       .then((res) => res.json())
       .then((data) => setSpots(data))
   }, [])

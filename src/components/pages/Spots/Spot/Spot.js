@@ -1,9 +1,12 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import useAuth from "../../../hooks/useAuth"
 import css from "./spot.css"
 
 const Spot = (props) => {
-  const { name, image, id, price, day } = props.spot
+  const { user } = useAuth()
+
+  const { name, image, _id, price, day } = props.spot
   return (
     <div className="service col-lg-4 col-md-6 col-12 my-4">
       <div className="bgcolor">
@@ -14,10 +17,7 @@ const Spot = (props) => {
           Cost : <span className="text-danger">${price}</span>
           <small>per day</small>
         </h2>
-        <Link to={`/spot/${id}`}>
-          <button className="btn-danger rounded-3">Learn More</button>
-        </Link>
-        <Link to={`/booking/${id}`}>
+        <Link to={`/booking/${_id}`}>
           <button className="btn1">Book Now</button>
         </Link>
       </div>

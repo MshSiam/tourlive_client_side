@@ -9,7 +9,9 @@ const ContactUs = () => {
     watch,
     formState: { errors }
   } = useForm()
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = (data) => {
+    console.log(data)
+  }
   return (
     <div>
       <div className="cu-img p-4 mb-4">

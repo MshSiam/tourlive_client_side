@@ -17,7 +17,7 @@ const Footer = () => {
       <div className="main-footer  mt-5 py-5">
         <div className="container   ">
           <div className="row">
-            <div className="col ">
+            <div className="col-lg-4 col-md-6 ">
               {/* <img className="nav-img" src={logo} alt="" /> */}
               <h2 className="text-light">TourLive</h2>
               <hr className="text-danger" />
@@ -28,18 +28,18 @@ const Footer = () => {
                 <li>{street}123 street, South North</li>
               </ul>
             </div>
-            <div className="col text-light">
+            <div className="col-lg-4 col-md-6 text-light">
               <h4>Tour Guide</h4>
               <hr className="text-danger" />
 
               <ul className="text-light">
-                <li>Our Doctors</li>
-                <li>Icu specialists</li>
-                <li>Nurse</li>
+                <li>Muhammad Siam</li>
+                <li>Mainuddin Sifat</li>
+                <li>Muhammad Saif</li>
                 <li>Other Stuffs</li>
               </ul>
             </div>
-            <div className="col text-light">
+            <div className="col-lg-4 col-md-6 text-light">
               <h4>Follow Us on Social</h4>
               <hr className="text-danger" />
 
@@ -70,7 +70,9 @@ const Footer = () => {
           </div>
           <hr className="text-danger fw-bold" />
           <div className="row">
-            <p className="text-danger">&copy; Reserved by Muhammad Siam</p>
+            <p className="text-light fw-bold">
+              &copy; Reserved by Muhammad Siam
+            </p>
           </div>
         </div>
       </div>

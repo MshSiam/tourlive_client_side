@@ -21,9 +21,7 @@
 }
 
 /* Contact form */
-.contact-form {
-  margin: 35px 25%;
-}
+
 .contact-form input,
 textarea {
   display: block;

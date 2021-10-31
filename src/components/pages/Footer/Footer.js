@@ -1,5 +1,15 @@
 import React from "react"
 import css from "./footer.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faPhone,
+  faLocationArrow,
+  faStreetView
+} from "@fortawesome/free-solid-svg-icons"
+
+const phone1 = <FontAwesomeIcon icon={faPhone} />
+const maps = <FontAwesomeIcon icon={faLocationArrow} />
+const street = <FontAwesomeIcon icon={faStreetView} />
 
 const Footer = () => {
   return (
@@ -13,9 +23,9 @@ const Footer = () => {
               <hr className="text-danger" />
               <hr className="text-danger" />
               <ul className="text-light">
-                {/* <li>{phone1} 01765871554</li>
+                <li>{phone1} 01765871554</li>
                 <li>{maps}Brahmanbaria, Bangladesh</li>
-                <li>{street}123 street, South North</li> */}
+                <li>{street}123 street, South North</li>
               </ul>
             </div>
             <div className="col text-light">
